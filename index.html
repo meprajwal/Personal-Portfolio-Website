@@ -1,0 +1,194 @@
+<html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!-- Bootstrap and Font Awesome Cdns for better design : ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar || Finally made it usable-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About me section || Was easy to implement -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Hi there! I'm Prajwal Acharya, also known as Pero 😊. Currently, I'm a second-semester B.Tech student at Sri Venkateshwara College of Engineering and Technology. Before this, I completed my intermediate education at Arniko Awasiya College in Biratnagar, Nepal.</p>
+                    <p>I have a strong interest in web development, particularly in back-end technologies. I've been refining my skills in creating responsive and user-friendly websites using HTML, CSS, and JavaScript as well.</p>
+                    <p>I'm constantly learning and exploring new technologies to stay on track with industry trends.</p>
+                    <p>You can find some of my work on <a href="https://github.com/meprajwal" target="_blank">GitHub.</a> Feel free to explore my portfolio.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-picture-container">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMzAwLjAwMDAwMHB0IiBoZWlnaHQ9IjMwMC4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDMwMC4wMDAwMDAgMzAwLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgo8bWV0YWRhdGE+CkNyZWF0ZWQgYnkgcG90cmFjZSAxLjEwLCB3cml0dGVuIGJ5IFBldGVyIFNlbGluZ2VyIDIwMDEtMjAxMQo8L21ldGFkYXRhPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwzMDAuMDAwMDAwKSBzY2FsZSgwLjEwMDAwMCwtMC4xMDAwMDApIgpmaWxsPSIjMDAwMDAwIiBzdHJva2U9Im5vbmUiPgo8cGF0aCBkPSJNMTM4NSAyNzkwIGMtMTIzIC0xOSAtMjQ0IC02OSAtMzQ0IC0xNDUgLTE0MiAtMTA4IC0yMzEgLTI3OCAtMjMxCi00NDIgbDAgLTYyIC00NyAtMjEgYy04MSAtMzYgLTIxMCAtMTI4IC0yNjggLTE5MyAtMzEgLTM0IC03MSAtOTEgLTg4IC0xMjcKLTMwIC02MSAtMzIgLTcyIC0zMiAtMTcwIDAgLTk5IDIgLTEwOSAzMyAtMTcwIDY0IC0xMjQgMTY3IC0yMjIgMzIwIC0zMDMgMTAzCi01NCAxMzYgLTY3IDI5MiAtMTEzIGwxMTUgLTM0IDI3IDIwIGMxNSAxMSAzMCAyMCAzMyAyMCAzIDAgNSAtMjAgNSAtNDUgMAotMjUgMyAtNDUgNyAtNDUgNCAwIDMxIDIzIDYwIDUyIGw1MiA1MSA1NyAtMTEgYzY3IC0xNCAxOTggLTE1IDI2OSAtMiA1MCA5CjUwIDkgODggLTMyIDM2IC0zOSAzOCAtNDAgNTIgLTIyIDggMTAgMjAgMzYgMjYgNTcgMTIgMzYgMjkgNTAgMjkgMjUgMSAtNyAxMAotMjQgMjEgLTM3IDIwIC0yNCAyMiAtMjQgODAgLTEyIDI5NSA2MSA1NzQgMjQwIDY2MCA0MjYgMTExIDIzNiAtNDEgNTEzIC0zNjIKNjYzIGwtNTkgMjcgMCA1NSBjMCA3MSAtMjIgMTU5IC02MCAyMzUgLTEyMiAyNDggLTQzNiA0MDAgLTczNSAzNTV6IG0yMDYgLTI1CmMxNDYgLTEyIDI4NSAtODAgNDAwIC0xOTQgODMgLTgzIDEzNyAtMTc5IDE1OCAtMjc5IDExIC01NSAxNSAtMTMyIDYgLTEzMiAtMwowIC00MSAxMiAtODMgMjYgLTU0IDE4IC04MSAzMyAtODggNDggLTUgMTEgLTM2IDQyIC02OCA2OCAtMjUyIDIwMiAtNjIzIDE5MQotODU0IC0yNiAtNDkgLTQ3IC04MSAtNjggLTEyMiAtODEgLTMwIC0xMCAtNjcgLTI0IC04MiAtMzIgbC0yOCAtMTQgMCA1NCBjMAoyMzEgMTgzIDQ1NCA0NDMgNTM3IDY2IDIxIDE5MSA0MCAyMzIgMzQgMTEgLTIgNTAgLTUgODYgLTl6IG02NCAtMzYwIGM4NiAtMjIKMTc3IC02NyAyNDYgLTEyMSAzMiAtMjYgNTcgLTQ5IDU1IC01MSAtMiAtMyAtNjAgNSAtMTI4IDE3IC0yNDUgNDEgLTUyOCAzNQotNzI5IC0xNiAtMzEgLTggLTYwIC0xNCAtNjQgLTE0IC0xMiAwIDEyNSAxMDkgMTU5IDEyNyAxNyA5IDY3IDI5IDExMSA0NCA2NwoyMyA5NyAyOCAxODUgMjggNjUgMSAxMjkgLTUgMTY1IC0xNHogbTIwNSAtMTg0IGMzNTIgLTczIDYyMiAtMjM2IDcxNCAtNDMxCjI5IC02MCAzMSAtNzMgMzEgLTE3NSAwIC05NSAtMyAtMTE3IC0yMyAtMTU3IC01MyAtMTA4IC0yMTMgLTI0MyAtMzc0IC0zMTcKLTEwMCAtNDYgLTMyOCAtMTE0IC0zMjggLTk4IDAgMiAxMiAzMSAyNyA2MyAxNyAzOCA1MCA4MSA5MyAxMjQgNjcgNjYgMTI3CjE1NSAxNTEgMjIzIDcgMjAgMTcgMzcgMjEgMzcgNCAwIDggMjMgOCA1MCBsMCA1MCAyNyAtMTcgYzI2IC0xOCAyNyAtMTcgMTkgMgotNSAxMSAtMTUgNDkgLTIzIDg0IC01MiAyNDAgLTI4NSA0MzkgLTU3MSA0ODcgLTI0NiA0MiAtNTEyIC0yOSAtNjc4IC0xODMKLTY2IC02MCAtMTU3IC0xNjkgLTE3NiAtMjEwIC0xMSAtMjQgLTM5IC02MCAtNjIgLTgwIGwtNDEgLTM2IDM1IDYgYzE5IDQgNDYKOSA1OSAxMyAyMyA3IDIyIDMgLTIzIC04MiAtNTIgLTk2IC05NyAtMTUxIC0xMzAgLTE1NyAtMTIgLTIgLTMgLTUgMjAgLTYgNDcKLTEgOTcgMTQgMTM2IDQxIGwyNyAxOSAtNSAtODggYy0zIC00OCAtMTAgLTEwMiAtMTQgLTEyMCAtNCAtMTcgLTUgLTM0IC0yCi0zNyA4IC05IDY3IDc3IDkyIDEzNSBsMjIgNTIgMzAgLTUzIGMxNiAtMjkgNjUgLTg4IDEwOCAtMTMxIDcyIC03MSA3OCAtODIKODUgLTEyOSA0IC0yOCA1IC01MyAzIC01NiAtMTIgLTExIC0yMzUgNjMgLTMzMyAxMTEgLTI1MyAxMjIgLTM5NSAyOTQgLTM5NQo0NzcgMCAxNzEgMTQ2IDM1MyAzNzIgNDYxIDUxIDI1IDExMCA1MiAxMzAgNjAgNjEgMjYgMjkwIDc5IDM5OCA5MSAxOSAyIDEzNAozIDI1NSAxIDE3MSAtMyAyNDEgLTggMzE1IC0yNHogbS00NDYgLTE3MyBjNzcgLTExNyAxMTkgLTIxMSAxMjQgLTI4MCAyIC0zMgo4IC01OCAxMiAtNTggMTAgMCA0MCAxNzcgNDAgMjQxIGwxIDU0IDI0IC01OCBjMjggLTY4IDEzNyAtMjY3IDE0NiAtMjY3IDcgMAotMjUgMjE3IC01MSAzNDMgLTkgNDggLTE0IDkwIC05IDkzIDE0IDggNDUgLTMxIDk0IC0xMjEgNjEgLTExMCA5MiAtMjExIDk3Ci0zMDMgMiAtMzkgNiAtNzIgOSAtNzIgMTAgMCAzNiAzMyA2MiA3OCAxNCAyNCAyNyA0MCAyOSAzNSA2IC0xMCAtNyAtMjEzIC0xNwotMjYzIC01IC0yOSAtMiAtMjUgMjEgMjMgMjYgNTUgNTIgNzkgMzggMzUgLTE1IC00NyAtMzAgLTEzOCAtMjQgLTEzOCA0IDAgMTkKMTcgMzMgMzggMTQgMjIgNDQgNTQgNjYgNzEgNTMgNDIgNTQgMjQgNiAtNzQgLTY0IC0xMjggLTE4NSAtMjQ5IC0zMDQgLTMwMgotODEgLTM2IC0yMDYgLTYzIC0yOTYgLTYzIC05MyAwIC0yMjEgMjggLTMwMSA2NiAtNTMgMjUgLTE5MyAxMjkgLTIxMCAxNTYgLTgKMTEgLTE0IDI0OCAtNyAyNDggMSAwIDkgLTEyIDE4IC0yNyAxNCAtMjYgMTQgLTIzIDEwIDU3IGwtNSA4NSAxOSAtNDEgYzExCi0yMyAyMyAtNDQgMjggLTQ3IDQgLTMgOCAzNiA5IDg2IDEgMTM5IDM4IDMyMCA3NyAzODUgMTcgMjggMzQgNTIgMzcgNTIgMyAwCjUgLTY5IDYgLTE1MyAxIC0xMjAgNCAtMTU5IDE4IC0xODcgbDE3IC0zNSAtNiA2MCBjLTUgNTEgLTIgNzMgMjQgMTQ1IDM3IDEwNQo5MCAyMjAgMTAxIDIyMCA1IDAgMzMgLTM3IDY0IC04MnogbTE1MSA2MSBjMTIgLTM2IDkgLTE0NyAtNCAtMTYzIC03IC04IC0xMAotMjAgLTYgLTI2IDEwIC0xNiAtMTQgLTEyIC0zMSA1IC05IDggLTEyIDE1IC04IDE1IDUgMCAzIDUgLTQgMTIgLTcgNyAtMTIgMjEKLTEyIDMyIDAgMTAgLTMgMTYgLTcgMTMgLTMgLTQgLTEyIDMgLTE4IDE2IC03IDEyIC0yMCAzNiAtMjkgNTIgLTkgMTcgLTE2IDI2Ci0xNiAyMCAwIC01IC01IC0zIC0xMCA1IC0yMSAzMyAtMTEgMzggNjUgMzggNjQgMCA3NSAtMyA4MCAtMTl6IG03MCA3IGMxOSAtOAozNSAtMjEgMzYgLTI4IDEgLTcgMiAtMjYgMyAtNDMgMSAtMTYgNSAtMzkgOSAtNTAgMyAtMTEgOSAtNDkgMTIgLTg0IGw1IC02NAotMjkgNTYgYy0xNiAzMSAtNDMgNzQgLTYwIDk2IC0zMCAzOCAtMzkgNzkgLTI1IDExNSA3IDE5IDcgMTkgNDkgMnogbS0zNjEKLTUzIGMtOCAtMjEgLTI0IC00OSAtMzQgLTYzIGwtMTggLTI0IDIgNTMgYzMgNTMgMTQgNzEgNDggNzEgMTUgMCAxNSAtMyAyCi0zN3ogbTYyNCAtMzkgYzI2IC0xNSA2OCAtNDkgOTQgLTc2IDI2IC0yNiA1MCAtNDggNTUgLTQ4IDI2IDAgMTMzIC0yMTEgMTI3Ci0yNDkgLTMgLTE0IC02IC0zNSAtOSAtNDYgLTIgLTExIC00IC0yNyAtNCAtMzUgLTEgLTEyIC00IC0xMSAtMTIgMyAtMTQgMjQKLTI3IDIxIC0yMiAtNiA0IC0xOCAtMyAtMjYgLTMwIC0zOSAtMTkgLTkgLTM4IC0xNCAtNDEgLTExIC0zIDQgLTYgMjYgLTYgNTAKMCAzOSAtMTMgNTkgLTIyIDMyIC0yIC02IC01IDE1IC02IDQ3IC0xIDMzIC04IDc5IC0xNiAxMDQgbC0xMyA0NSAtMTYgLTMxCmMtMzMgLTY0IC00NiAtNTIgLTc3IDc0IC0xNCA1NSAtODYgMjAzIC05NCAxOTQgLTQgLTMgLTQgMSAtMSAxMCA4IDIxIDM0IDE2CjkzIC0xOHogbS04MDAgLTI2IGMtNSAtMTggLTEyIC00MiAtMTUgLTUzIC0yIC0xMSAtNyAtMjcgLTEwIC0zNSAtMyAtOCAtNQotMzAgLTQgLTQ5IDIgLTE4IC0xIC0zMSAtNiAtMjggLTQgMyAtOCAtNyAtOSAtMjEgLTEgLTU2IC03IC0xMjcgLTEyIC0xMzYgLTgKLTE0IC0yMiAxOCAtMjIgNTEgMCAxNyAtNCAzNCAtOSAzNyAtNCAzIC04IC0yNyAtOSAtNjcgMCAtMTIyIDAgLTEyMSAtMTcKLTEwNyAtMTMgMTEgLTE1IDYgLTE1IC0zOCAwIC01OCAtMTQgLTc1IC0zMiAtMzggLTEyIDI5IC0yOCAzNCAtMjggMTEgMCAtOAotOSAtMjQgLTE5IC0zNCAtMTEgLTExIC0xNyAtMjIgLTE0IC0yNSAzIC0zIDIgLTEzIC0yIC0yMyAtNSAtMTAgLTkgLTIwIC0xMAotMjMgLTIxIC01NiAtMjkgLTcwIC0zOCAtNzAgLTEzIDAgLTE1IDEyOSAtMyAxNjggNSAxMyAzIDIyIC0zIDIyIC02IDAgLTExCi04IC0xMSAtMTggMCAtMjEgLTM2IC01OSAtNDcgLTQ5IC0zIDQgLTEyIDIgLTIwIC01IC0yNyAtMjIgLTIzIDEgMTIgNjggMzYKNjkgNjkgMTc0IDU1IDE3NCAtNSAwIC0xMSAtNyAtMTQgLTE2IC0zIC04IC0xMCAtMTMgLTE1IC0xMCAtMTMgOCAyNyA4MyA2NgoxMjYgMTggMTkgNDkgNTUgNzAgNzggMjEgMjQgNjEgNjAgODggODAgMjggMjAgNTIgMzkgNTUgNDMgNSA2IDI5IDE3IDQyIDE4IDQKMSAyIC0xNCAtNCAtMzF6IG0tMTQyIC01ODMgYzE1IC00NyAyNCAtODggMjEgLTkxIC0yIC0zIC0yMSAyMSAtNDEgNTIgLTI2IDQzCi0zNCA2NCAtMjkgODMgMTQgNjAgMTggNTYgNDkgLTQ0eiBtMjIxIC0zMDggYzExIDQgMTQgMSAxMiAtMTIgLTUgLTI1IC00NQotMzkgLTQ2IC0xNyAtMiAyNSA4IDUwIDE0IDM1IDIgLTcgMTEgLTkgMjAgLTZ6IG02MSAtMjkgYy0yIC04IDUgLTEyIDE3IC05CjIwIDMgMjAgMyAxIC0xOCAtMjEgLTIzIC0zMCAtMTkgLTQxIDE3IC01IDE2IC0yIDIyIDkgMjIgOSAwIDE1IC02IDE0IC0xMnoiLz4KPHBhdGggZD0iTTIwNjAgMjAzMiBjMCAtNSAxNiAtMTYgMzUgLTI1IDE5IC05IDM1IC0xMiAzNSAtNyAwIDYgLTYgMTAgLTE0IDEwCi03IDAgLTE5IDcgLTI2IDE1IC0xMyAxNiAtMzAgMjAgLTMwIDd6Ii8+CjxwYXRoIGQ9Ik0yMTQ1IDE5OTAgYzUgLTggNjMgLTQwIDczIC00MCAyIDAgLTEgNiAtNyAxNCAtMTQgMTYgLTc1IDQwIC02NiAyNnoiLz4KPHBhdGggZD0iTTIyOTUgMTg5OCBjMTEgLTYgMjggLTIwIDM5IC0yOSAxMCAtMTAgMjMgLTE2IDI5IC0xMiA1IDMgLTIgMTMgLTE3CjIyIC0xNCA4IC0yNiAxOSAtMjYgMjMgMCA1IC0xMCA4IC0yMiA4IC0yMiAtMSAtMjIgLTEgLTMgLTEyeiIvPgo8cGF0aCBkPSJNNTc2IDE4MjkgYy0zOCAtNDIgLTI4IC01MyAxMSAtMTMgMTggMTggMjkgMzUgMjQgMzggLTQgMyAtMjAgLTgKLTM1IC0yNXoiLz4KPHBhdGggZD0iTTI0MDggMTgwOSBjMjMgLTIzIDQyIC00NSA0MiAtNDkgMCAtNCA5IC0xNyAyMCAtMzAgMjUgLTI5IDI2IC0xNyAxCjI0IC0xOSAzMCAtODcgOTYgLTk5IDk2IC00IDAgMTIgLTE5IDM2IC00MXoiLz4KPHBhdGggZD0iTTQ5MCAxNzE4IGMtMTYgLTI5IC0zMCAtNTcgLTMwIC02MyAxIC0xMiAzMCAyNSAzMCAzOCAwIDQgMTIgMjQgMjYKNDMgMTUgMTkgMjEgMzQgMTUgMzQgLTYgMCAtMjQgLTI0IC00MSAtNTJ6Ii8+CjxwYXRoIGQ9Ik0yNDk4IDE3MDQgYy00IC0zIDIgLTIzIDEzIC00MiAxMCAtMjAgMTkgLTQ0IDIwIC01MiAwIC04IDMgLTEwIDUKLTQgNiAxNSAtMzAgMTA3IC0zOCA5OHoiLz4KPHBhdGggZD0iTTE4NTUgMTQ4MCBjLTMgLTUgLTEyIC03IC0yMCAtMyAtOCAzIC0xNSAxIC0xNSAtNSAwIC0xNiAtNTggLTMzCi02NCAtMTkgLTUgOSAtNyA5IC0xMiAwIC0zIC03IC0xNiAtMTMgLTI5IC0xMyAtMTMgMCAtMjcgLTQgLTMwIC0xMCAtNCAtNiA4Ci0xMCAyOSAtMTAgMjUgMCAzNiAtNCAzNiAtMTUgMCAtOCA1IC0xNSAxMCAtMTUgNiAwIDEwIDkgMTAgMTkgMCAyNSA1OCA0MCA3MQoyMCA2IC0xMCA5IC04IDkgNyAwIDEyIDcgMjQgMTUgMjggMTYgNiAyMSAyNiA2IDI2IC02IDAgLTEyIC00IC0xNiAtMTB6Ii8+CjwvZz4KPC9zdmc+Cg==" alt="Not found :/" class="img-fluid rounded-circle profile-picture">
+                        <div class="profile-info">Don't have a good pfp ahahhaah</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-tasks"></i> To-Do Lists</h3>
+                            <p class="card-text">A project created for my +2 final practical examination. Built with PHP, JavaScript, and CSS.</p>
+                            <a href="https://github.com/meprajwal/todolists" class="btn btn-primary" target="_blank">View Repository</a>
+                            <a href="https://todolists.pacharya.com.np/home" class="btn btn-primary" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-clock"></i> Brahmamuhurat</h3>
+                            <p class="card-text">A web application that shows the next Brahmamuhurat time. Built with JavaScript, HTML, and CSS.</p>
+                            <a href="https://github.com/meprajwal/Brahmamuhurat" class="btn btn-primary" target="_blank">View Repository</a>
+                            <a href="https://meprajwal.github.io/Brahmamuhurat/" class="btn btn-primary" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-clipboard"></i> Where After See</h3>
+                            <p class="card-text">A simple prototype project. Couldn't complete. Built with HTML, CSS, and JavaScript.</p>
+                            <a href="https://github.com/meprajwal/where-after-see" class="btn btn-primary" target="_blank">View Repository</a>
+                            <a href="https://meprajwal.github.io/where-after-see/" class="btn btn-primary" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="tree">
+                        <ul>
+                            <li>
+                                <i class="fas fa-code-branch"></i> Programming Languages
+                                <ul>
+                                    <li><i class="fas fa-circle"></i> HTML</li>
+                                    <li><i class="fas fa-circle"></i> CSS</li>
+                                    <li><i class="fas fa-circle"></i> JavaScript</li>
+                                    <li><i class="fas fa-circle"></i> PHP</li>
+                                    <li><i class="fas fa-circle"></i> C/C++</li>
+                                    <li><i class="fas fa-circle"></i> C#</li>
+                                    <li><i class="fas fa-circle"></i> Python</li>
+                                    <li><i class="fas fa-circle"></i> Node.js</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="tree">
+                        <ul>
+                            <li>
+                                <i class="fas fa-laptop-code"></i> Frameworks & Libraries
+                                <ul>
+                                    <li><i class="fas fa-circle"></i> React</li>
+                                    <li><i class="fas fa-circle"></i> Express</li>
+                                    <li><i class="fas fa-circle"></i> Bootstrap</li>
+                                    <li><i class="fas fa-circle"></i> jQuery</li>
+                                    <li><i class="fas fa-circle"></i> Tailwind CSS</li>
+                                    <li><i class="fas fa-circle"></i> Discord.js</li>
+                                    <li><i class="fas fa-circle"></i> discord.py</li>
+                                    <li><i class="fas fa-circle"></i> Vite</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="tree">
+                        <ul>
+                            <li>
+                                <i class="fas fa-database"></i> Databases
+                                <ul>
+                                    <li><i class="fas fa-circle"></i> MongoDB</li>
+                                    <li><i class="fas fa-circle"></i> MySQL</li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <p>Made With <span class="heart">&hearts;</span> By Prajwal</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
