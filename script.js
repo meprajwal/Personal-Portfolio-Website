@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (name === "" || email === "" || message === "") {
       alert("Please fill in all fields.");
       return;
-    }
+    } 
 
     console.log("Name:", name);
     console.log("Email:", email);
